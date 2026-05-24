@@ -74,10 +74,10 @@
                         <div class="font-bold text-lg text-gray-900">3 Units</div>
                     </div>
                 </div>
-                <h3 class="font-bold text-xl text-gray-900 mb-1">Ahmed Doe</h3>
+                <h3 class="font-bold text-xl text-gray-900 mb-1">Rahul Sharma</h3>
                 <p class="text-gray-500 text-sm mb-4 flex items-center">
                     <svg class="h-4 w-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
-                    City Hospital, New York
+                    AIIMS, New Delhi
                 </p>
                 <a href="#" class="block w-full py-3 bg-gray-50 text-red-600 text-center font-bold rounded-xl group-hover:bg-red-600 group-hover:text-white transition">Contact Now</a>
             </div>
@@ -93,10 +93,10 @@
                         <div class="font-bold text-lg text-gray-900">1 Unit</div>
                     </div>
                 </div>
-                <h3 class="font-bold text-xl text-gray-900 mb-1">Sarah Smith</h3>
+                <h3 class="font-bold text-xl text-gray-900 mb-1">Priya Patel</h3>
                 <p class="text-gray-500 text-sm mb-4 flex items-center">
                     <svg class="h-4 w-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
-                    General Clinic, Chicago
+                    Apollo Hospital, Mumbai
                 </p>
                 <a href="#" class="block w-full py-3 bg-gray-50 text-red-600 text-center font-bold rounded-xl group-hover:bg-red-600 group-hover:text-white transition">Contact Now</a>
             </div>
