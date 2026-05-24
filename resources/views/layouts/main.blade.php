@@ -33,7 +33,9 @@
             @yield('content')
         </main>
 
-        @include('components.footer')
+        @if(request()->routeIs('home'))
+            @include('components.footer')
+        @endif
     </div>
 
     @yield('scripts')
