@@ -13,6 +13,37 @@
             </a>
         </div>
 
+        <!-- Platform Stats -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+            <div class="bg-white rounded-xl shadow-sm border border-red-100 p-6 flex items-center justify-between transition hover:shadow-md">
+                <div>
+                    <p class="text-sm font-medium text-gray-500 uppercase tracking-wider">Registered Donors</p>
+                    <h3 class="text-3xl font-bold text-red-600 mt-1">{{ $stats['total_donors'] }}</h3>
+                </div>
+                <div class="p-4 bg-red-50 rounded-full text-red-500">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+                </div>
+            </div>
+            <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-6 flex items-center justify-between transition hover:shadow-md">
+                <div>
+                    <p class="text-sm font-medium text-gray-500 uppercase tracking-wider">Active Emergencies</p>
+                    <h3 class="text-3xl font-bold text-gray-900 mt-1">{{ $stats['active_requests'] }}</h3>
+                </div>
+                <div class="p-4 bg-yellow-50 rounded-full text-yellow-600">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+                </div>
+            </div>
+            <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-6 flex items-center justify-between transition hover:shadow-md">
+                <div>
+                    <p class="text-sm font-medium text-gray-500 uppercase tracking-wider">My Requests</p>
+                    <h3 class="text-3xl font-bold text-gray-900 mt-1">{{ $stats['my_requests'] }}</h3>
+                </div>
+                <div class="p-4 bg-blue-50 rounded-full text-blue-500">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
+                </div>
+            </div>
+        </div>
+
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <!-- Profile Info Card -->
             <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 md:col-span-1 h-fit">

@@ -8,7 +8,15 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/', function () {
+    if (auth()->check()) {
+        if (auth()->user()->role === 'admin') {
+            return redirect()->route('admin.dashboard');
+        }
+        return redirect()->route('dashboard');
+    }
+    return app(\App\Http\Controllers\HomeController::class)->index();
+})->name('home');
 
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('/donors', [DonorController::class, 'index'])->name('donors.index');

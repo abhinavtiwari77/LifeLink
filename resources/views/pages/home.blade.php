@@ -3,6 +3,7 @@
 @section('content')
 <!-- Hero Section -->
 <section class="relative pt-20 pb-32 overflow-hidden bg-gradient-to-br from-red-50 to-white">
+    <div id="tsparticles" class="absolute inset-0 z-0 pointer-events-none opacity-60"></div>
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div class="text-center max-w-4xl mx-auto">
             <div class="inline-flex items-center px-4 py-2 rounded-full bg-red-100 text-red-600 font-semibold text-sm mb-6 shadow-sm border border-red-200">
@@ -134,7 +135,7 @@
     // Assuming tsPracticles is initialized here like in the original code
     document.addEventListener("DOMContentLoaded", function () {
         if(typeof tsParticles !== 'undefined') {
-            tsParticles.loadJSON("tsparticles", "{{ asset('json/particles.json') }}")
+            tsParticles.loadJSON("tsparticles", "{{ asset('json/particlesjs-config.json') }}")
                 .then(function() {
                     console.log('Particles loaded');
                 })

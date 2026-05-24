@@ -25,11 +25,12 @@ class DatabaseSeeder extends Seeder
             'city' => 'Admin City',
             'address' => 'Admin HQ',
             'role' => 'admin',
+            'is_donor' => false,
         ]);
 
-        // Create a regular user
+        // Create a regular donor
         User::create([
-            'name' => 'Regular User',
+            'name' => 'Regular Donor',
             'email' => 'user@lifelink.com',
             'password' => Hash::make('password'),
             'phone' => '0987654321',
@@ -39,6 +40,19 @@ class DatabaseSeeder extends Seeder
             'city' => 'User City',
             'address' => 'User Home',
             'role' => 'user',
+            'is_donor' => true,
+        ]);
+
+        // Create a patient/requester
+        User::create([
+            'name' => 'Patient User',
+            'email' => 'patient@lifelink.com',
+            'password' => Hash::make('password'),
+            'phone' => '1122334455',
+            'city' => 'User City',
+            'address' => 'Hospital Bed 3',
+            'role' => 'user',
+            'is_donor' => false,
         ]);
     }
 }

@@ -9,7 +9,7 @@ class DonorController extends Controller
 {
     public function index(Request $request)
     {
-        $query = User::where('role', 'user')->where('availability_status', 'available');
+        $query = User::where('role', 'user')->where('is_donor', true)->where('availability_status', 'available');
 
         if ($request->filled('blood_group')) {
             $query->where('blood_group', $request->blood_group);

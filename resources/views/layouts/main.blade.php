@@ -7,7 +7,7 @@
     <meta name="description" content="Your blood donation could save someone's life. Register as a donor or request blood in emergencies.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Inter:wght@300;400;500;600;700&family=Outfit:wght@700;800&display=swap" rel="stylesheet">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <style>
         body { font-family: 'Inter', sans-serif; }
@@ -26,8 +26,6 @@
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800 antialiased relative">
-    <div id="tsparticles" class="absolute inset-0 z-0 pointer-events-none opacity-40"></div>
-
     <div class="relative z-10 flex flex-col min-h-screen">
         @include('components.navbar')
 
