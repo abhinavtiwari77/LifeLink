@@ -1,10 +1,7 @@
 <?php
-
 namespace App\Http\Controllers;
-
 use App\Models\BloodRequest;
 use Illuminate\Http\Request;
-
 class BloodRequestController extends Controller
 {
     public function index()
@@ -30,12 +27,8 @@ class BloodRequestController extends Controller
             'city' => 'required|string|max:255',
             'notes' => 'nullable|string',
         ]);
-
-        $validated['user_id'] = auth()->id() ?? 1; // Fallback if not strictly auth protected, but we assume it might be. Wait, need-blood could be public or requires login.
-        // Actually the prompt says "Patient can request blood". Let's require auth for creating requests.
-        
+        $validated['user_id'] = auth()->id() ?? 1;
         auth()->user()->bloodRequests()->create($validated);
-
         return redirect()->route('blood_requests.index')->with('success', 'Blood request submitted successfully!');
     }
 }

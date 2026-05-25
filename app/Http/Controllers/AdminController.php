@@ -1,7 +1,5 @@
 <?php
-
 namespace App\Http\Controllers;
-
 use App\Models\User;
 use App\Models\BloodRequest;
 use Illuminate\Http\Request;
